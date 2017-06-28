@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>React on Node</title>
+        <base href="/">
+        <link type="text/css" rel="stylesheet" href="public/vendor.css" />
+        <link type="text/css" rel="stylesheet" href="public/client.css" />
+    </head>
+    <body>
+        <div id="app"><%- body %></div>
+    </body>
+    <script type="text/javascript">
+        window.__server_rendered = true;
+        window.__data = <%- JSON.stringify(data) %>;
+    </script>
+    <script type="text/javascript" src="public/vendor.js"></script>
+    <script type="text/javascript" src="public/client.js"></script>
+</html>

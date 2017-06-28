@@ -1,0 +1,49 @@
+{
+  "name": "universal-react-mvc",
+  "version": "0.1.0",
+  "description": "Universal React MVC App",
+  "main": "index.js",
+  "author": "Rahul Sethi",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack -p && node app.js",
+    "server:watch": "nodemon app.js",
+    "webpack:watch": "webpack -d -w",
+    "watch": "npm-run-all --parallel webpack:watch server:watch"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "bootstrap": "4.0.0-alpha.6",
+    "connect-mongo": "^1.3.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.10.5",
+    "node-jsx-babel": "^0.14.2",
+    "node-sass": "^4.5.3",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "redux": "^3.6.0",
+    "request": "^2.81.0",
+    "rxjs": "^5.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "redux-devtools": "^3.4.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0"
+  }
+}
